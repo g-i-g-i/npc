@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+	background: #fad0d8;
+  color: #555;
+  font-family: 'Gaegu', cursive;
+}
+#intro, #container {
+	background: #fcf4f8;
+	border-radius: 10px;
+  padding: 25px;
+	width: 600px;
+}
+#intro {
+	margin: auto;
+  text-align: center;
+}
+#container {
+	margin: 25px auto;
+  text-align: center;
+}
+#container h1 {
+	font-size: 16pt;
+}
+a, a:visited {
+	border-radius: 5px;
+	color: #ff97cc;
+	padding: 5px;
+	text-decoration: none;
+}
+a:hover {
+  color: #aaa;
+}
+h1, h2 {
+	color: #696e7d;
+	font-weight: 400;
+  margin: auto;
+	text-align: center;
+}
+.collapsible {
+	background: #fff;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-family: 'Gaegu', cursive;
+  font-size: 15pt;
+  margin: 10px auto;
+  padding: 18px;
+  text-align: center;
+  width: 100%;
+}
+  
+.active, .collapsible:hover {
+  background-color: #ffb3c9;
+  color: #ffb3c9;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height none ease-out;
+  background-color: #fcf4f8;
+}
+.art {
+	border-radius: 10px;
+	display: block;
+  margin: 50px auto 0 auto;
+  width: 85%;
+}
+.art2 {
+	display: block;
+  margin: 50px auto 0 auto;
+  width: 50%;
+}
+</style>
+</head>
+<body>
+<div id="intro">
+  <h1>art! of my neopets!</h1>
+  <p>it's uh... art of my neopets. idk. enjoy.</p>
+</div>
+
+<div id="container">
+  <h1>main account pets</h1>
+  <button class="collapsible">Intergalactic the Baby Ixi</button>
+  <div class="content">
+    
+    <img class="art2" src="https://cdn.discordapp.com/attachments/841261940940341248/841265337944899594/unknown.png">
+    by me
+    <img class="art" src="https://cdn.discordapp.com/attachments/789423240628011011/841058550805168143/Intergalactic.png">
+    by <b>Ryou</b> (<a href="https://neopetsclassic.com/userlookup/?user=ryoukishi">userlookup</a>)
+  	
+  </div>
+  <button class="collapsible">Planet the Faerie Ixi</button>
+  <div class="content">
+    
+    <img class="art2" src="https://cdn.discordapp.com/attachments/841261940940341248/841264596073054238/unknown.png">
+    by me
+    <img class="art" src="https://cdn.discordapp.com/attachments/719326170830733364/841260614176210964/Untitled_Artwork.png">
+    also by me
+    <img class="art" src="https://cdn.discordapp.com/attachments/789423240628011011/841058552743592007/Planet.png">
+    by <b>Ryou</b> (<a href="https://neopetsclassic.com/userlookup/?user=ryoukishi">userlookup</a>)
+  	
+  </div>
+
+  <button class="collapsible">Space the Faerie Aisha</button>
+  <div class="content">
+    
+    <img class="art" src="https://cdn.discordapp.com/attachments/841261940940341248/841262478171439114/unknown.png">
+    by <b>Batty</b> (<a href="https://neopetsclassic.com/userlookup/?user=batty">userlookup</a>)
+    <img class="art2" src="https://cdn.discordapp.com/attachments/841261940940341248/841261960543731774/unknown.png">
+    i made this . jpg
+    <img class="art" src="https://cdn.discordapp.com/attachments/789423240628011011/841058553074024518/Space.png">
+    by <b>Ryou</b> (<a href="https://neopetsclassic.com/userlookup/?user=ryoukishi">userlookup</a>)
+  	
+  </div>
+
+  <button class="collapsible">Stars the Faerie Wocky</button>
+  <div class="content">
+    
+    <img class="art2" src="https://cdn.discordapp.com/attachments/841261940940341248/841266170220249098/unknown.png">
+    by me
+  	
+  </div>
+
+</div>
+
+
+  <h2><a href="/npc/index.html">back?</a></h2>
+
+  
+  <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+  </body>
+
+
+
