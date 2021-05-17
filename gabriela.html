@@ -82,15 +82,30 @@ h1, h2 {
 }
 
 .grmt {
-	border: 2px #fff solid;
-	opacity: 0.1;
-  padding: 5px;
+  padding: 7px;
   width: 50px;
 }
 .grmt2 {
-	border: 2px #eee solid;
-  padding: 5px;
+  opacity: 0.5;
+  outline: 50px solid rgba(245, 185, 225, 0.3) !important;
+  outline-offset: -50px;
+  overflow: hidden;
+  padding: 7px;
   width: 50px;
+}
+.name {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
 }
 </style>
 </head>
@@ -98,7 +113,7 @@ h1, h2 {
 <div id="intro">
   <h1>account name: gabriela</h1>
   <p>
-    <a href="https://neopetsclassic.com/userlookup/?user=gabriela">userlookup</a> <a href="https://neopetsclassic.com/gallery/view/?username=gabriela">gallery</a>
+    <a href="https://neopetsclassic.com/userlookup/?user=gabriela">userlookup</a> <a href="https://neopetsclassic.com/market/browseshop/?owner=gabriela">shop</a> <a href="https://neopetsclassic.com/gallery/view/?username=gabriela">gallery</a>
   </p>
 </div>
 
@@ -117,31 +132,36 @@ h1, h2 {
   
   <button class="collapsible">Space's Gourmet Tracker.</button>
   <div class="content">
+      <!-- 
+				<img class="grmt" src="">
+			-->
     <p>
       <img class="grmt" src="https://neopetsclassic.com/images/items/14386.gif">
       <img class="grmt2" src="https://neopetsclassic.com/images/items/19063.gif">
       <img class="grmt2" src="https://neopetsclassic.com/images/items/14387.gif">
       <img class="grmt2" src="https://neopetsclassic.com/images/items/16850.gif">
       <img class="grmt" src="https://neopetsclassic.com/images/items/21465.gif">
+      <img class="grmt2" src="https://neopetsclassic.com/images/items/25394.gif">
       <img class="grmt2" src="https://neopetsclassic.com/images/items/puntec-fruit.gif">
       <img class="grmt2" src="https://neopetsclassic.com/images/items/33998.gif">
       <img class="grmt2" src="https://neopetsclassic.com/images/items/35569.gif">
-      <img class="grmt2" src="https://neopetsclassic.com/images/items/25394.gif">
       <img class="grmt2" src="https://neopetsclassic.com/images/items/19532.gif">
       <img class="grmt" src="https://neopetsclassic.com/images/items/9465.gif">
       <img class="grmt" src="https://neopetsclassic.com/images/items/18166.gif">
+      <img class="grmt2" src="https://neopetsclassic.com/images/items/8461.gif">
       <img class="grmt" src="https://neopetsclassic.com/images/items/18399.gif">
       <img class="grmt" src="https://neopetsclassic.com/images/items/4934.gif">
-      <img class="grmt2" src="https://neopetsclassic.com/images/items/8461.gif">
-      <img class="grmt" src="https://neopetsclassic.com/images/items/foo_brucicle_jelly.gif">
       <img class="grmt" src="https://neopetsclassic.com/images/items/food_rainbowbrucicle.gif">
-      <img class="grmt" src="https://neopetsclassic.com/images/items/lut_chococone.gif">
-      <img class="grmt" src="https://neopetsclassic.com/images/items/lut_vanillacone.gif">
+      <img class="grmt" src="https://neopetsclassic.com/images/items/foo_brucicle_jelly.gif">
       <img class="grmt" src="https://neopetsclassic.com/images/items/food_hamicecream.gif">
+      <img class="grmt2" src="https://neopetsclassic.com/images/items/lut_chococone.gif">
+      <img class="grmt" src="https://neopetsclassic.com/images/items/lut_vanillacone.gif">
       <img class="grmt2" src="https://neopetsclassic.com/images/items/food_cybunny_sculpture.gif">
       <img class="grmt" src="https://neopetsclassic.com/images/items/snowfood_crystaltaco.gif">
       <img class="grmt" src="https://neopetsclassic.com/images/items/snowfood_crystalone.gif">
       <img class="grmt" src="https://neopetsclassic.com/images/items/snowfood_crystalburger.gif">
+      <img class="grmt" src="https://neopetsclassic.com/images/items/snowfood_chiapopstrawberry.gif">
+      <img class="grmt" src="https://neopetsclassic.com/images/items/snow_bansplitchiapop.gif">
       <img class="grmt" src="https://neopetsclassic.com/images/items/snow_mag_blueberry.gif">
       <img class="grmt" src="https://neopetsclassic.com/images/items/snow_mag_thornberry.gif">
       <img class="grmt" src="https://neopetsclassic.com/images/items/snow_gooseberry.gif">
@@ -150,13 +170,15 @@ h1, h2 {
       <img class="grmt" src="https://neopetsclassic.com/images/items/sno_chiapop_carrot.gif">
     </p>
     <p>
-      <b>Space</b> has scored <b>10</b> Gourmet Club points!
+      <b>Space</b> has scored <b>11</b> Gourmet Club points!
     </p>
+    <p>
+      ( <b style="color: rgba(245, 185, 225, 0.3);">▇</b> = gourmets eaten. )
   </div>
 </div>
 
 <div id="container">
-  <h1>GALLERY.</h1>
+  <h1>🌸 🎀 — a pastel gallery.</h1>
   <button class="collapsible">overview.</button>
   <div class="content">
     <p class="itm">
@@ -165,6 +187,7 @@ h1, h2 {
       <img src="https://neopetsclassic.com/images/items/blue-uni-morphing-potion.gif">
       <img src="https://neopetsclassic.com/images/items/204.gif">
       <img src="https://neopetsclassic.com/images/items/bottlefaerie_air.gif">
+      <img src="https://neopetsclassic.com/images/items/pot_cybunny_cloud.gif">
       <img src="https://neopetsclassic.com/images/items/potion73.gif">
       <img src="https://neopetsclassic.com/images/items/pot_grarrl_cloud.gif">
       <img src="https://neopetsclassic.com/images/items/potion_ixi_cloud.gif">
@@ -225,6 +248,7 @@ h1, h2 {
       <img src="https://neopetsclassic.com/images/items/foo_tuskcicle_cherry.gif">
       <img src="https://neopetsclassic.com/images/items/food_kougra_lolly.gif">
       <img src="https://neopetsclassic.com/images/items/snow_ice_donut.gif">
+      <img src="https://neopetsclassic.com/images/items/snow_ice_carrot.gif">
       <img src="https://neopetsclassic.com/images/items/slush_mysteryberry.gif">
       <img src="https://neopetsclassic.com/images/items/slush_bubblegum.gif">
       <img src="https://neopetsclassic.com/images/items/slushie_snow.gif">
@@ -237,6 +261,14 @@ h1, h2 {
       <img src="https://neopetsclassic.com/images/items/book_grundo3.gif">
       <img src="https://neopetsclassic.com/images/items/book_knowmotes.gif">
       <img src="https://neopetsclassic.com/images/items/book_ixi_head.gif">
+      <img src="https://neopetsclassic.com/images/items/sugardonut.gif">
+      <img src="https://neopetsclassic.com/images/items/bluedonut.gif">
+      <img src="https://neopetsclassic.com/images/items/greendonut.gif">
+      <img src="https://neopetsclassic.com/images/items/pinkdonut.gif">
+      <img src="https://neopetsclassic.com/images/items/purpledonut.gif">
+      <img src="https://neopetsclassic.com/images/items/pinksprinkdonut.gif">
+      <img src="https://neopetsclassic.com/images/items/lemonsprinkdonut.gif">
+      <img src="https://neopetsclassic.com/images/items/rainbowdonut.gif">
     </p>
   </div>
 
@@ -252,8 +284,10 @@ h1, h2 {
       <img src="https://neopetsclassic.com/images/items/petpet_ceratops.gif">
       <img src="https://neopetsclassic.com/images/items/foo_tuskcicle_cherry.gif">
       <img src="https://neopetsclassic.com/images/items/14807.gif">
+      <img src="https://neopetsclassic.com/images/items/sugardonut.gif">
       <img src="https://neopetsclassic.com/images/items/314.gif">
       <img src="https://neopetsclassic.com/images/items/petpet_sauropod.gif">
+      <img src="https://neopetsclassic.com/images/items/lemonsprinkdonut.gif">
       <img src="https://neopetsclassic.com/images/items/book_grundo3.gif">
       <img src="https://neopetsclassic.com/images/items/11002.gif">
       <img src="https://neopetsclassic.com/images/items/book_unibook.gif">
@@ -263,6 +297,7 @@ h1, h2 {
       <img src="https://neopetsclassic.com/images/items/21254.gif">
       <img src="https://neopetsclassic.com/images/items/21255.gif">
       <img src="https://neopetsclassic.com/images/items/faerie_pet8.gif">
+      <img src="https://neopetsclassic.com/images/items/greendonut.gif">
       <img src="https://neopetsclassic.com/images/items/470.gif">
       <img src="https://neopetsclassic.com/images/items/pet_bluna.gif">
       <img src="https://neopetsclassic.com/images/items/bottlefaerie_air.gif">
@@ -270,6 +305,8 @@ h1, h2 {
       <img src="https://neopetsclassic.com/images/items/1716.gif">
       <img src="https://neopetsclassic.com/images/items/toy_aisha_plushie6.gif">
       <img src="https://neopetsclassic.com/images/items/snow_ice_donut.gif">
+      <img src="https://neopetsclassic.com/images/items/snow_ice_carrot.gif">
+      <img src="https://neopetsclassic.com/images/items/bluedonut.gif">
       <img src="https://neopetsclassic.com/images/items/blue-uni-morphing-potion.gif">
       <img src="https://neopetsclassic.com/images/items/toy_uni_plushie1.gif">
       <img src="https://neopetsclassic.com/images/items/9214.gif">
@@ -279,6 +316,7 @@ h1, h2 {
       <img src="https://neopetsclassic.com/images/items/potion_scorchio_cloud.gif">
       <img src="https://neopetsclassic.com/images/items/potion_ixi_cloud.gif">
       <img src="https://neopetsclassic.com/images/items/pot_grarrl_cloud.gif">
+      <img src="https://neopetsclassic.com/images/items/pot_cybunny_cloud.gif">
       <img src="https://neopetsclassic.com/images/items/toy_kiko_cloud.gif">
       <img src="https://neopetsclassic.com/images/items/26623.gif">
       <img src="https://neopetsclassic.com/images/items/plush_kyrii_faerie.gif">
@@ -291,6 +329,7 @@ h1, h2 {
       <img src="https://neopetsclassic.com/images/items/faerie_pet4.gif">
       <img src="https://neopetsclassic.com/images/items/5622.gif">
       <img src="https://neopetsclassic.com/images/items/food_kougra_lolly.gif">
+      <img src="https://neopetsclassic.com/images/items/purpledonut.gif">
       <img src="https://neopetsclassic.com/images/items/25388.gif">
       <img src="https://neopetsclassic.com/images/items/raspberrymilkshake.gif">
       <img src="https://neopetsclassic.com/images/items/21589.gif">
@@ -311,6 +350,8 @@ h1, h2 {
       <img src="https://neopetsclassic.com/images/items/slush_bubblegum.gif">
       <img src="https://neopetsclassic.com/images/items/snow_candyflosschiapop.gif">
       <img src="https://neopetsclassic.com/images/items/1892.gif">
+      <img src="https://neopetsclassic.com/images/items/pinkdonut.gif">
+      <img src="https://neopetsclassic.com/images/items/pinksprinkdonut.gif">
       <img src="https://neopetsclassic.com/images/items/2280.gif">
       <img src="https://neopetsclassic.com/images/items/5250.gif">
       <img src="https://neopetsclassic.com/images/items/4464.gif">
@@ -320,6 +361,7 @@ h1, h2 {
       <img src="https://neopetsclassic.com/images/items/snow_snowberrychiapop.gif">
       <img src="https://neopetsclassic.com/images/items/19532.gif">
       <img src="https://neopetsclassic.com/images/items/15.gif">
+      <img src="https://neopetsclassic.com/images/items/rainbowdonut.gif">
     </p>
   </div>
   
@@ -346,7 +388,6 @@ h1, h2 {
       <img src="https://neopetsclassic.com/images/items/pot_shoyru_cloud.gif" title="Cloud Shoyru Morphing Potion">
       <img src="https://neopetsclassic.com/images/items/pot_ele_cloud.gif" title="Cloud Elephante Morphing Potion">
       <img src="https://neopetsclassic.com/images/items/pot_ruki_cloud.gif" title="Cloud Ruki Morphing Potion">
-      <img src="https://neopetsclassic.com/images/items/pot_cybunny_cloud.gif" title="Cloud Cybunny Morphing Potion">
       <img src="https://neopetsclassic.com/images/items/blue-cybunny-morphing-potion.gif" title="Blue Cybunny Morphing Potion">
       <img src="https://neopetsclassic.com/images/items/22878.gif" title="Baby Kougra Morphing Potion">
       <img src="https://neopetsclassic.com/images/items/21912.gif" title="Baby Kacheek Morphing Potion">
@@ -362,7 +403,9 @@ h1, h2 {
     	<img src="https://neopetsclassic.com/images/items/foo_brucicle_jelly.gif" title="Grape Jelly Brucicle">
       <img src="https://neopetsclassic.com/images/items/slu_jumbleberry.gif" title="Jumbleberry Slushie">
       <img src="https://neopetsclassic.com/images/items/starwberrymilkshake.gif" title="Strawberry Milkshake">
+      <img src="https://neopetsclassic.com/images/items/food_cybunny_sculpture.gif" title="Frozen Cybunny Treat">
       <img src="https://neopetsclassic.com/images/items/9229.gif" title="Frozen Jelly">
+      <img src="https://neopetsclassic.com/images/items/3514.gif" title="Baby Blu">
       <img src="https://neopetsclassic.com/images/items/10807.gif" title="Blizzard Ring">
       <img src="https://neopetsclassic.com/images/items/7163.gif" title="Plain Omelette">
     </p>
