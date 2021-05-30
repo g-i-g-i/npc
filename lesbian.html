@@ -28,15 +28,32 @@ body {
 #container h1 {
 	font-size: 16pt;
 }
-.pet, .pet2 {
+#pet, #pet2 {
+	background: #fff;
+	display: inline-block;
+  margin: 10px 5px;
+  padding: 20px;
 	width: 70px;
 }
-.pet2 {
-	opacity: 0.2;
+#pet img {
+	width: 100%
 }
-.gallery {
+#pet2 img {
+	opacity: 0.3;
+	width: 100%;
+}
+#pet b {
+	color: #fff;
+  font-weight: normal;
+}
+.pp {
+	display: block;
+  margin: 15px auto 0 auto;
+	width: 50% !important;
+}
+.itm img {
 	padding: 5px;
-	width: 45px;
+	width: 50px;
 }
 a, a:visited {
 	border-radius: 5px;
@@ -80,61 +97,86 @@ h1, h2 {
   transition: max-height 0.2s ease-out;
   background-color: #fff;
 }
-.grmt {
-	border: 2px #fff solid;
-	opacity: 0.1;
-  padding: 5px;
-  width: 50px;
-}
-.grmt2 {
-	border: 2px #eee solid;
-  padding: 5px;
-  width: 50px;
-}
 </style>
 </head>
 <body>
 <div id="intro">
   <h1>account name: lesbian</h1>
-  <p><a href="https://neopetsclassic.com/userlookup/?user=lesbian">userlookup</a> <a href="https://neopetsclassic.com/gallery/view/?username=lesbian">gallery</a></p>
+  <p>
+    <a href="https://neopetsclassic.com/userlookup/?user=lesbian">userlookup</a>
+  </p>
+  <button class="collapsible">account theme</button>
+  <div class="content">
+    i'm gay... that's my account theme.
+  </div>
 </div>
 
 <div id="container">
   <h1>PETS</h1>
-  <p>
-    <img class="pet" src="https://neopetsclassic.com/images/pets/Xweetok/xweetok_faerie_baby.gif" title="Keira">
-    <img class="pet2" src="https://neopetsclassic.com/images/pets/Shoyru/shoyru_faerie_baby.gif" title="Gillian">
-    <img class="pet" src="https://neopetsclassic.com/images/pets/Peophin/peophin_faerie_baby.gif" title="Lera">
-    <img class="pet2" src="https://neopetsclassic.com/images/pets/Kougra/kougra_faerie_baby.gif" title="Twyla">
-    <img class="pet2" src="https://neopetsclassic.com/images/pets/Poogle/poogle_faerie_baby.gif" title="Essie">
-    <img class="pet2" src="https://neopetsclassic.com/images/pets/Krawk/krawk_faerie_baby.gif" title="Les">
-    <img class="pet2" src="https://neopetsclassic.com/images/pets/Draik/draik_faerie_baby.gif" title="Elise">
-  </p>
-  <p>2/7 painted!</p>
-  <button class="collapsible">notes</button>
-<div class="content">
-  <p>
-  	○　why do i hate having neopoints?
-  </p>
+  <div id="pet">
+    <img src="https://neopetsclassic.com/images/pets/Xweetok/xweetok_faerie_baby.gif">
+    Keira
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    tbd
   </div>
+  <div id="pet2">
+    <img src="https://neopetsclassic.com/images/pets/Draik/draik_faerie_baby.gif">
+    Rosamund
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    tbd
+  </div>
+  <div id="pet2">
+    <img src="https://neopetsclassic.com/images/pets/Shoyru/shoyru_faerie_baby.gif">
+    Gillian
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    tbd
+  </div>
+  <div id="pet">
+    <img src="https://neopetsclassic.com/images/pets/Peophin/peophin_faerie_baby.gif">
+    Lera
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    tbd
+  </div>
+  <br>
+  <div id="pet2">
+    <img src="https://neopetsclassic.com/images/pets/Kougra/kougra_faerie_baby.gif">
+    Twyla
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    tbd
+  </div>
+  <div id="pet2">
+    <img src="https://neopetsclassic.com/images/pets/Poogle/poogle_faerie_baby.gif">
+    Elise
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    tbd
+  </div>
+  <div id="pet2">
+    <img src="https://neopetsclassic.com/images/pets/Krawk/krawk_faerie_baby.gif">
+    Heiress
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    tbd
+  </div>
+  <div id="pet">
+    <img src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    <b>.</b>
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    <b>.</b>
+  </div>
+  <p>2/7 painted!</p>
+  
 </div>
 
 <div id="container">
-  <h1>GALLERY.</h1>
-  <button class="collapsible">overview.</button>
-<div class="content">
-  <p>
-    <img class="gallery" src="">
-  </p>
-</div>
-
-  <button class="collapsible">wishlist.</button>
-<div class="content">
-    <p>
-    <img class="gallery" src="" title="">
-    </p>
+  <h1>etc.</h1>
+    <button class="collapsible">notes to self.</button>
+  <div class="content" style="text-align: justify;">
+    <ul>
+      <li>do i really want Heiress to be a faerie krawk?</li>
+      <li>thank u tania for telling me Rosamund was available, batty for telling me Gillian was available, and natalie for adopting Elise out to me.</li>
+    </ul>
   </div>
 </div>
+  
   <h2><a href="/npc/index.html">back?</a></h2>
 
   
@@ -155,7 +197,5 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
+
   </body>
-
-
-
