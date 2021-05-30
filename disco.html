@@ -28,15 +28,43 @@ body {
 #container h1 {
 	font-size: 16pt;
 }
-.pet, .pet2 {
+#pet, #pet2 {
+	background: #fff;
+	display: inline-block;
+  margin: 10px 5px;
+  padding: 20px;
 	width: 70px;
 }
-.pet2 {
-	opacity: 0.2;
+#pet3 {
+	background: transparent;
+	display: inline-block;
+  margin: 10px 5px;
+  padding: 20px;
+	width: 70px;
 }
-.gallery {
+#pet img {
+	width: 100%
+}
+#pet2 img {
+	opacity: 0.3;
+	width: 100%;
+}
+#pet3 img {
+	opacity: 0;
+	width: 100%;
+}
+#pet b {
+	color: #fff;
+  font-weight: normal;
+}
+.pp {
+	display: block;
+  margin: 15px auto 0 auto;
+	width: 50% !important;
+}
+.itm img {
 	padding: 5px;
-	width: 45px;
+	width: 50px;
 }
 a, a:visited {
 	border-radius: 5px;
@@ -80,59 +108,85 @@ h1, h2 {
   transition: max-height 0.2s ease-out;
   background-color: #fff;
 }
-.grmt {
-	border: 2px #fff solid;
-	opacity: 0.1;
-  padding: 5px;
-  width: 50px;
-}
-.grmt2 {
-	border: 2px #eee solid;
-  padding: 5px;
-  width: 50px;
-}
 </style>
 </head>
 <body>
 <div id="intro">
   <h1>account name: disco</h1>
-  <p><a href="https://neopetsclassic.com/userlookup/?user=disco">userlookup</a> <a href="https://neopetsclassic.com/gallery/view/?username=disco">gallery</a></p>
+  <p>
+    <a href="https://neopetsclassic.com/userlookup/?user=disco">userlookup</a>
+  </p>
+  <button class="collapsible">account theme</button>
+  <div class="content">
+    foodz and fruitz.
+  </div>
 </div>
 
 <div id="container">
   <h1>PETS</h1>
-  <p>
-    <img class="pet2" src="https://neopetsclassic.com/images/pets/Blumaroo/blumaroo_plushie_baby.gif" title="Sugar">
-    <img class="pet2" src="https://neopetsclassic.com/images/pets/Shoyru/shoyru_plushie_baby.gif" title="Bread">
-    <img class="pet" src="https://neopetsclassic.com/images/pets/Kau/kau_plushie_baby.gif" title="Dough">
-    <img class="pet2" src="https://neopetsclassic.com/images/pets/Aisha/aisha_plushie_baby.gif" title="Clementine">
-    <img class="pet2" src="https://neopetsclassic.com/images/pets/Cybunny/cybunny_plushie_baby.gif" title="Raspberry">
-  </p>
-  <p>1/5 painted!</p>
-  <button class="collapsible">notes</button>
-<div class="content">
-  <p>
-    ○　fyora bless delaney for RSing the plushie kau mp 
-  </p>
+  <div id="pet2">
+    <img src="https://neopetsclassic.com/images/pets/Shoyru/shoyru_plushie_baby.gif">
+    Bread
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    tbd
   </div>
+  <div id="pet">
+    <img src="https://neopetsclassic.com/images/pets/Kau/kau_plushie_baby.gif">
+    Dough
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    tbd
+  </div>
+  <div id="pet2">
+    <img src="https://neopetsclassic.com/images/pets/Aisha/aisha_plushie_baby.gif">
+    Clementine
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    tbd
+  </div>
+  <div id="pet2">
+    <img src="https://neopetsclassic.com/images/pets/Kougra/kougra_plushie_baby.gif">
+    Strawberries
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    tbd
+  </div>
+  <br>
+  <div id="pet2">
+    <img src="https://neopetsclassic.com/images/pets/Cybunny/cybunny_plushie_baby.gif">
+    Raspberry
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    tbd
+  </div>
+  <div id="pet3">
+    <img src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    &nbsp;
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    &nbsp;
+  </div>
+  <div id="pet3">
+    <img src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    &nbsp;
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    &nbsp;
+  </div>
+  <div id="pet3">
+    <img src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    &nbsp;
+    <img class="pp" src="https://images.neopets.com/items/foo_invisible_cookie.gif">
+    &nbsp;
+  </div>
+  <p>1/5 painted!</p>
+  
 </div>
 
 <div id="container">
-  <h1>GALLERY.</h1>
-  <button class="collapsible">overview.</button>
-<div class="content">
-  <p>
-    <img class="gallery" src="">
-  </p>
-</div>
-
-  <button class="collapsible">wishlist.</button>
-<div class="content">
-    <p>
-    <img class="gallery" src="" title="">
-    </p>
+  <h1>etc.</h1>
+    <button class="collapsible">notes to self.</button>
+  <div class="content" style="text-align: justify;">
+    <ul>
+      <li>thank u delaney my homie my friend my pal for selling the plushie kau mp to me.</li>
+    </ul>
   </div>
 </div>
+  
   <h2><a href="/npc/index.html">back?</a></h2>
 
   
@@ -153,7 +207,5 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
+
   </body>
-
-
-
